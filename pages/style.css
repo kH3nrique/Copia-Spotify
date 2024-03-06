@@ -1,0 +1,81 @@
+:root {
+	--default-green: #1db954;
+	--light-green: #1ed760;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    overflow: auto;
+}
+
+/* Showcase */
+#showcase {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #121212;
+    background-blend-mode: color;
+    overflow: auto;
+}
+
+#showcase .showcase-container {
+	background-color: #00000099;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 30px;
+	color: white; /* Adicionado para garantir texto branco no contêiner */
+}
+
+#showcase .showcase-container p {
+	margin: 15px 0;
+	font-size: 0.85rem; /* Aumentado o tamanho da fonte */
+}
+
+.lyrics-container {
+	padding: 20px;
+	white-space: pre-line;
+}
+
+.lyrics-container p {
+	font-size: 0.85rem; /* Corrigido o tamanho da fonte */
+}
+
+.showcase-btn{
+	justify-content: center;
+	align-items: center;
+	background-color: #121212;
+	display: flex;
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+}
+
+.showcase-btn a {
+	text-decoration: none;
+	color: white;
+}
+
+/* Utility Classes */
+.btn-back {
+	background: var(--default-green);
+	text-transform: uppercase;
+	padding: 15px 60px;
+	border: none;
+	border-radius: 30px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	transition: all 300ms ease;
+}
+
+.btn-back:hover {
+	background: var(--light-green);
+	cursor: pointer;
+}
