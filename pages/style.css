@@ -12,6 +12,7 @@
 body {
     font-family: "Roboto", sans-serif;
     overflow: auto;
+	background-color: #121212;
 }
 
 /* Showcase */
